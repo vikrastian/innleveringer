@@ -1,9 +1,11 @@
 h1, h2, p{
     font-family: 'Montserrat', sans-serif;
     color: whitesmoke;
+    text-align: center;
 }
 
 form{
+    float: left;
     font-family: 'Montserrat', sans-serif;
     color: whitesmoke;
     /* text-align: center; */
@@ -23,9 +25,14 @@ body{
     background-color: #003366;
 }
 
-.labelTextarea{
-    text-align: left !important;
-}
+/* Alligning video center / floating right*/
+video {
+    float: right;
+    border-radius: 15px;
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block */
+    }
 
 textarea{
 width: 100%;
@@ -34,5 +41,11 @@ max-width: 450px;
 
 .button{
     width: 150px;
+}
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    font-size: 12px
 }
 

@@ -19,18 +19,26 @@
 <body>
     <h1>Svøm for livet</h1>
     <h2>Svømmeopplæring</h2>
+    <div>
+    <video class="video" width="500" height="auto" controls>
+        <source src="ZeroToHero.mp4" type="video/mp4" autoplay muted>
+      Your browser does not support the video tag.
+      </video>
+    </div>
         <!-- Since we have not learned how to connect the form - I researched how to open the users email client so they can email us. -->
         <form action="mailto:stianvh01.kodehode@gmail.com" method="post" enctype="text/plain" autocomplete="on">
         <!-- Linking label and input box with the FOR and ID values. -->
         <label for="name">Navn</label>
-        <input type="name" id="name" placeholder="Skriv inn fullt navn">
+        <input type="name" id="name" placeholder="Skriv inn fullt navn" required>
+        <br>
         <label for="email">E-post</label>
-        <input type="email" name="" id="email" placeholder="Skriv inn gyldig e-post">
-        <br>
+        <input type="email" name="" id="email" placeholder="Skriv inn gyldig e-post" required>
+        <br><br><br>
         <!-- ERROR - Trying to align label Din melding to the left, but not able to do that for the moment. Should the form fields be put into containers (DIV) for easier formatting ? -->
-        <label class="labelTextarea" for="dinMelding" style="text-align: left !important;">Din melding</label>
+        <label class="labelTextarea" for="dinMelding">Din melding</label>
         <br>
-        <textarea name="dinMelding" id="dinMelding" cols="30" rows="10" placeholder="Skriv inn din melding"></textarea>
+        <textarea name="dinMelding" id="dinMelding" cols="30" rows="10" placeholder="Skriv inn din melding" required></textarea>
+        <br>
         <input class="button" type="submit" value="Send din melding">
         <input class="button" type="reset" value="Nullstill skjema">
     </form>
