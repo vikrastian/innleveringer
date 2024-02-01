@@ -1,5 +1,38 @@
-/* font-family: 'Montserrat', sans-serif; */
+h1, h2, p{
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+}
+
+form{
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    /* text-align: center; */
+    font-size: 12px;
+}
+
+form{
+    margin: 10px 10px 10px 10px;
+}
+
+::placeholder{
+    color:Grey;
+    font-size: 12px;
+}
 
 body{
-    background-color: lightblue;
+    background-color: #003366;
 }
+
+.labelTextarea{
+    text-align: left !important;
+}
+
+textarea{
+width: 100%;
+max-width: 450px;
+}
+
+.button{
+    width: 150px;
+}
+
