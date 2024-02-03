@@ -1,0 +1,119 @@
+h1, h2 {
+    text-align: center;
+}
+
+section {
+    font-family:  'Montserrat', sans-serif;
+    color: whitesmoke;
+    font-size: 12px;
+    margin-left: 10px;
+    line-height: 1.6;
+}
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 5px black;
+    margin-bottom: 5px;
+    color:#FFA500;
+
+}
+
+h2{
+    font-size: 20px;
+    text-shadow: 2px ;
+    margin-top: 0px;
+    color: whitesmoke;
+}
+
+.container {
+    position: relative; /* Establishes a positioning context */
+    height: 300px; /* Or whatever your desired height is */
+}
+
+form{
+    /* float: left; */
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    /* text-align: center; */
+    font-size: 12px;
+    position: absolute;
+  bottom: 0; /* Positions the form at the bottom of the container */
+  width: 100%; /* Optional, depending on your design */
+}
+
+form{
+    margin: 10px 10px 10px 10px;
+}
+
+::placeholder{
+    color:Grey;
+    font-size: 12px;
+}
+
+body{
+    background-color: #003366;
+}
+
+/* Alligning video center / floating right
+PS: Not been considering filtypes/embedding youtube video etc vs loading speed 
+*/
+
+video {
+    float: right;
+    border-radius: 15px;
+    opacity: 0.5;
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block */
+    }
+video:hover{
+    opacity: 1.0;
+}
+
+
+textarea{
+width: 100%;
+max-width: 450px;
+}
+
+.button{
+    width: 150px;
+}
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    font-size: 12px
+}
+
+.left {
+    float: left;
+    width: 50%;
+  }
+  
+  .right {
+    float: right;
+    width: 50%;
+  }
+
+  .form-row {
+    display: flex;
+    margin-bottom: 10px; /* Optional: adds space between rows */
+  }
+  
+  .label {
+    flex: 0 0 30%; /* Do not grow, do not shrink, start at 30% width */
+    /* Additional styling as needed */
+  }
+  
+  .input {
+    flex: 1; /* Grow to use up the remaining space */
+    /* Additional styling as needed */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }

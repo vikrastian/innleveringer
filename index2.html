@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Setting default size/zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svøm for livet</title>
+    <!-- Linking stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts 
+    IMPORTANT: To avoid issues with GDPR, download and host the fonts required.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+</head>
+<body>
+ <div>
+    <nav>
+        <ul>
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+          </ul>
+    </nav>
+ </div>
+
+    <h1>SVØM FOR LIVET</h1>
+    <h2>SVØMMEOPPLÆRING</h2>
+<div class="container">    
+<div class="rigth">
+    <video class="video" width="500" height="auto" controls>
+    <source src="ZeroToHero.mp4" type="video/mp4" autoplay muted>
+    Your browser does not support the video tag.
+    </video>
+</div>
+
+        <!-- Since we have not learned how to connect the form - I researched how to open the users email client so they can email us. -->
+    <div class="left">
+        <section>En drøm om å lære å svømme? Kanskje du ønsker å lære crawl for å delta på ironman eller klare opptak til militæret eller politiet?¨
+        <br>
+        Du har kommet til det riktige stedet, send oss en melding på skjema nedenfor så kan vi forklare hvordan vi best kan hjelpe deg å nå dine svømmemål!
+
+        </section>
+    <div class="form">   
+        <form action="mailto:stianvh01.kodehode@gmail.com" method="post" enctype="text/plain" autocomplete="on">
+        <!-- Linking label and input box with the FOR and ID values. -->
+    <div class="form-row">
+        <label for="name" class="label">Navn</label>
+        <input type="name" class="input" id="name" placeholder="Skriv inn fullt navn" required>
+    </div>
+        <br>
+    <div class="form-row">
+        <label for="email" class="label">E-post</label>
+        <input type="email" name="" class="input" id="email" placeholder="Skriv inn gyldig e-post" required>
+    </div>
+     <br>
+        <!-- ERROR - Trying to align label Din melding to the left, but not able to do that for the moment. Should the form fields be put into containers (DIV) for easier formatting ? -->
+    <div>
+        <label class="labelTextarea" class="label"for="dinMelding">Din melding</label>
+    
+        <br>
+        <textarea name="dinMelding" id="dinMelding" cols="30" rows="10" placeholder="Skriv inn din melding" required></textarea>
+    </div>
+    <br>
+        <input class="button" type="submit" value="Send din melding">
+        <input class="button" type="reset" value="Nullstill skjema">
+    </form>
+</div>
+</div>
+</div>
+<!-- Test -->
+</body>
+</html>
